@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--Design by Ravindra(IIITDM Kanchi 4th year)-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;     
+            align-items: center;         
+            background: #222;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            gap: 40px; /* SPACE between the two boxes */
+        }
+
+        .primary, .secondary{
+            width:400px;
+            height: 100px;
+            color: aliceblue;
+            background-color: rgb(0, 9, 9);
+            border: 3px solid white;
+            position: relative; /* Only inner content absolute */
+            border-radius: 8px;
+        }
+
+        h2{
+            position: absolute;
+            left: 3%;
+            top: 17%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input{
+            height: 18.5px;
+            position: absolute;
+            bottom: 9.5%;
+            left: 3%;
+            border-radius: 5px;
+            font-size: medium;
+        }
+        .label{
+            position: absolute;
+            left: 3%;
+            top: -5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #result {
+            position: static;       /* VERY important */
+            color: white;
+            margin-top: -20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .out {
+            position: absolute;
+            width: 250px;
+            height: 28px;
+            left:33%;
+            bottom: 29%;
+            border: 3px solid white;
+        
+            border-radius: 8px;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+
+        <div class="primary">
+            <h2>Enter your name:</h2>
+            
+            <input type="text" id="name" style="font-family: Arial, Helvetica, sans-serif;">
+        </div>
+
+        <div class="secondary">
+            <h2>Enter other name:</h2>
+            <input type="text" id="name2" style="font-family: Arial, Helvetica, sans-serif;">
+        </div>
+        <button class="out"onclick="showResult()">FLAMES</button>
+        <h2 class="label" id="result" style="color: rgb(253, 253, 254);"></h2>
+
+
+    </div>
+
+</body>
+<script src="2.js"></script>
+</html>
