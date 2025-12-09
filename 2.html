@@ -22,7 +22,6 @@
         }
 
         .primary, .secondary{
-            display:flex;
             width:400px;
             height: 100px;
             color: aliceblue;
@@ -40,7 +39,6 @@
         }
 
         input{
-            display:flex;
             height: 18.5px;
             position: absolute;
             bottom: 9.5%;
@@ -49,7 +47,6 @@
             font-size: medium;
         }
         .label{
-            display:flex;
             position: absolute;
             left: 3%;
             top: -5%;
@@ -75,32 +72,23 @@
             background-color: black;
         }
     </style>
-    
 </head>
 <body>
 
     <div class="box">
 
         <div class="primary">
-            <form id="ravindra123">
-                <label for="user-name">
             <h2>Enter your name:</h2>
-                    </label>
-                
             
             <input type="text" id="name" style="font-family: Arial, Helvetica, sans-serif;">
-                
         </div>
 
         <div class="secondary">
-            <label for="other-name">
             <h2>Enter other name:</h2>
-                </label>
             <input type="text" id="name2" style="font-family: Arial, Helvetica, sans-serif;">
         </div>
         <button class="out"onclick="showResult()">FLAMES</button>
         <h2 class="label" id="result" style="color: rgb(253, 253, 254);"></h2>
-    </form>
 
 
     </div>
@@ -111,13 +99,14 @@
 
 <script>
   const firebaseConfig = {
-    apiKey: "PASTE_YOUR_apiKey",
-    authDomain: "PASTE_YOUR_authDomain",
+    apiKey: "AIzaSyCsDAeplI6BiLf1o50CzMLVFM7K278r9kw",
+    authDomain: "ravindra123-739bf.firebaseapp.com",
     databaseURL: "https://ravindra123-739bf-default-rtdb.firebaseio.com",
-    projectId: "PASTE_YOUR_projectId",
-    storageBucket: "PASTE_YOUR_storageBucket",
-    messagingSenderId: "PASTE_YOUR_messagingSenderId",
-    appId: "PASTE_YOUR_appId"
+    projectId: "ravindra123-739bf",
+    storageBucket: "ravindra123-739bf.firebasestorage.app",
+    messagingSenderId: "206426143932",
+    appId: "1:206426143932:web:83744567f6dc007e68a4b9",
+  measurementId: "G-J91X7YKDLS"
   };
 
   firebase.initializeApp(firebaseConfig);
@@ -126,9 +115,3 @@
 
 <script src="2.js"></script>
 </html>
-
-
-
-
-
-
