@@ -53,4 +53,11 @@ function showResult() {
 
     let ans = flames(a.toLowerCase(), b.toLowerCase());
     document.getElementById("result").innerText = "Result: " + ans;
+    database.ref("flamesResults").push({
+        firstName: a,
+        secondName: b,
+        result: ans,
+        time: new Date().toISOString()
+    });
 }
+
